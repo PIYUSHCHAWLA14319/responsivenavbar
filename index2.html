@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+        <div class="header">
+            <a href="#" class="logo"><i class="fa fa-heart"></i>Piyush</a>
+            <form class="SearchBox">
+                <input type="text" placeholder="Search Here..." id="Search">
+                <label for="Search" class="fas fa-search"></label>
+            </form>
+        </div>
+
+        <div class="Mainheader">
+            <div id="Menubtn" class="fas fa-bars" onclick="piyush()"></div>
+            <nav class="Navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Product</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div id="icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user-circle"></i>
+
+            </div>
+        </div>
+    </header>
+    <script>
+        let Menu =document.querySelector("#Menubtn")
+        let Navbar =document.querySelector(".Navbar")
+
+        const piyush=()=>{
+            Menu.classList.toggle("fa-times")
+            Navbar.classList.toggle("active")
+        }
+
+    </script>
+  </body>
+</html>
